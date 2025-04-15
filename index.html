@@ -17,7 +17,6 @@
       min-height: 100vh;
       text-align: center;
       padding: 20px;
-      position: relative;
     }
 
     .overlay {
@@ -26,6 +25,18 @@
       border-radius: 8px;
       max-width: 900px;
       width: 100%;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-container img {
+      width: 180px;
+      height: auto;
     }
 
     h1 {
@@ -60,14 +71,6 @@
       text-decoration: underline;
     }
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 150px;
-      height: auto;
-    }
-
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -81,21 +84,19 @@
         font-size: 1rem;
       }
 
-      .logo {
-        width: 120px;
+      .logo-container img {
+        width: 140px;
       }
     }
   </style>
 </head>
 <body>
-  <img src="https://i.postimg.cc/BnYnnD57/Made-with-ins-Mind-SOAR.png" alt="Soar Fuel Link Logo" class="logo">
-  
   <div class="overlay">
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/BnYnnD57/Made-with-ins-Mind-SOAR.png" alt="Soar Fuel Link Logo">
+    </div>
     <div>
-      
-      <p><strong> SOAR Fuel Link - Trusted Access to Fuel — Diesel (EN590), Jet A1 & Gasoil D6</strong></p>
-
-      <!-- New added sentence -->
+      <p><strong>SOAR Fuel Link - Trusted Access to Fuel — Diesel (EN590), Jet A1 & Gasoil D6</strong></p>
       <p>We facilitate trusted transactions between verified diesel fuel suppliers and qualified buyers across the UAE and international markets. Specializing in EN590, D2, Jet A1 and D6 diesel, we help ensure smooth logistics, competitive pricing, and secure deals. Available for immediate delivery in the UAE and worldwide</p>
 
       <h2>Fuel Products</h2>

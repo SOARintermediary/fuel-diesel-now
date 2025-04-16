@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SOAR Fuel Link connects verified fuel buyers and suppliers for secure, transparent transactions in EN590, Jet A1, and D6 fuels." />
   <title>SOAR Fuel Link</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -54,7 +56,7 @@
 
     p, li {
       font-size: 1.1rem;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
     ul {
@@ -73,68 +75,73 @@
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 5vw, 2rem);
       }
 
       h2 {
-        font-size: 1.2rem;
+        font-size: clamp(1.1rem, 4vw, 1.3rem);
       }
 
       p, li {
         font-size: 1rem;
+        line-height: 1.7;
       }
 
       .logo-container img {
         width: 140px;
       }
     }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="logo-container">
+  <main class="overlay">
+    <header class="logo-container">
       <img src="https://i.postimg.cc/BnYnnD57/Made-with-ins-Mind-SOAR.png" alt="Soar Fuel Link Logo">
-    </div>
-    <div>
+    </header>
+
+    <section>
       <p><strong>SOAR Fuel Link - Trusted Access to Fuel</strong></p>
-      <p>We facilitate trusted transactions between verified fuel suppliers and qualified buyers across the UAE and international markets. Specializing in EN590, D2, Jet A1 and D6 diesel, we help ensure smooth logistics, competitive pricing, and secure deals. Available for immediate delivery in the UAE and worldwide</p>
+      <p>We facilitate trusted transactions between verified fuel suppliers and qualified buyers across the UAE and international markets. Specializing in EN590, D2, Jet A1, and D6 diesel, we help ensure smooth logistics, competitive pricing, and secure deals. Available for immediate delivery in the UAE and worldwide.</p>
+    </section>
 
-      <h2>Fuel Products</h2>
-      <section>
-  <div class="product-info">
-    <h2>🛢 Diesel (EN590 10ppm)</h2>
-    <ul>
-      <li><strong>Full compliance</strong> with EU specifications</li>
-      <li><strong>Available delivery options</strong>: FOB/FOT upon request</li>
-      <li><strong>Allocations from certified refineries</strong></li>
-    </ul>
-  </div>
+    <section>
+      <h2>🛢 Diesel (EN590 10ppm)</h2>
+      <ul>
+        <li><strong>Full compliance</strong> with EU specifications</li>
+        <li><strong>Available delivery options</strong>: FOB/FOT upon request</li>
+        <li><strong>Allocations from certified refineries</strong></li>
+      </ul>
 
-  <div class="product-info">
-    <h2>✈ Jet A1 Aviation Fuel</h2>
-    <ul>
-      <li><strong>Aviation-grade fuel</strong> for commercial operations</li>
-      <li><strong>Certified supply chains</strong> for secure delivery</li>
-      <li><strong>Available</strong> for bulk delivery or lifting</li>
-    </ul>
-  </div>
+      <h2>✈ Jet A1 Aviation Fuel</h2>
+      <ul>
+        <li><strong>Aviation-grade fuel</strong> for commercial operations</li>
+        <li><strong>Certified supply chains</strong> for secure delivery</li>
+        <li><strong>Available</strong> for bulk delivery or lifting</li>
+      </ul>
 
-  <div class="product-info">
-    <h2>⚙️ Gasoil D6</h2>
-    <ul>
-      <li><strong>Heavy fuel oil</strong> used for power generation and marine applications</li>
-      <li><strong>Delivery options</strong>: FOB, CIF, or TTO</li>
-      <li><strong>Global allocations</strong> through verified partners</li>
-      <li><strong>Documentation required</strong> prior to allocation</li>
-    </ul>
-  </div>
-</section>
+      <h2>⚙️ Gasoil D6</h2>
+      <ul>
+        <li><strong>Heavy fuel oil</strong> used for power generation and marine applications</li>
+        <li><strong>Delivery options</strong>: FOB, CIF, or TTO</li>
+        <li><strong>Global allocations</strong> through verified partners</li>
+        <li><strong>Documentation required</strong> prior to allocation</li>
+      </ul>
+    </section>
 
-      <a href="mailto:info@soarbusinessgroup.com" style="display:inline-block; background-color:#f5b400; color:#000; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; margin-top:20px;">📩 Contact Us</a>
+    <a href="mailto:info@soarbusinessgroup.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; background-color:#f5b400; color:#000; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; margin-top:20px;">📩 Contact Us</a>
 
+    <section>
       <h2>Our Role</h2>
       <p>We are not a reseller. We act as your trusted intermediary — facilitating direct, verified deals between buyers and licensed suppliers.</p>
+    </section>
 
+    <section>
       <h2>Why Work With Us</h2>
       <ul>
         <li>Transparent communication</li>
@@ -142,12 +149,18 @@
         <li>Rapid response and documentation handling</li>
         <li>UAE-based network with global reach</li>
       </ul>
+    </section>
 
+    <section>
       <h2>Get in Touch</h2>
-      <p>We only work with serious and verified buyers with proper procedures (ICPO, BCL e.t.c)</p>
-      If you're ready to move forward, contact us to discuss current availability and documentation requirements.</p>
-      <p>📩 <a href="mailto:info@soarbusinessgroup.com">info@soarbusinessgroup.com</a></p>
-    </div>
-  </div>
+      <p>We only work with serious and verified buyers with proper procedures (ICPO, BCL, etc.)</p>
+      <p>If you're ready to move forward, contact us to discuss current availability and documentation requirements.</p>
+      <p>📩 <a href="mailto:info@soarbusinessgroup.com" target="_blank" rel="noopener noreferrer">info@soarbusinessgroup.com</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 SOAR Business Group. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>

@@ -183,41 +183,86 @@
 
     <section id="products">
   <div style="display: flex; flex-direction: column; gap: 40px;">
-    <div class="product-card">
+    <div class="product-card-horizontal">
       <img src="https://raw.githubusercontent.com/SOARintermediary/soar-fuel-link/main/diesel_logo_transparent.png" alt="Diesel Logo">
-      <h2>🛢 Diesel (EN590 10ppm)</h2>
-      <ul>
-        <li><strong>Full compliance</strong> with EU specifications</li>
-        <li><strong>Available delivery options</strong>: FOB/FOT upon request</li>
-        <li><strong>Allocations from certified refineries</strong></li>
-      </ul>
-      <a href="#contact" class="cta-button">Request Quote</a>
+      <div>
+        <h2>🛢 Diesel (EN590 10ppm)</h2>
+        <p><strong>Full compliance</strong> with EU specifications</p>
+        <p><strong>Available delivery options</strong>: FOB/FOT upon request</p>
+        <p><strong>Allocations from certified refineries</strong></p>
+        <a href="#contact" class="cta-button">Request Quote</a>
+      </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card-horizontal">
       <img src="https://raw.githubusercontent.com/SOARintermediary/soar-fuel-link/main/jet_logo_transparent.png" alt="Jet A1 Logo">
-      <h2>✈ Jet A1 Aviation Fuel</h2>
-      <ul>
-        <li><strong>Aviation-grade fuel</strong> for commercial operations</li>
-        <li><strong>Certified supply chains</strong> for secure delivery</li>
-        <li><strong>Available</strong> for bulk delivery or lifting</li>
-      </ul>
-      <a href="#contact" class="cta-button">Request Quote</a>
+      <div>
+        <h2>✈ Jet A1 Aviation Fuel</h2>
+        <p><strong>Aviation-grade fuel</strong> for commercial operations</p>
+        <p><strong>Certified supply chains</strong> for secure delivery</p>
+        <p><strong>Available</strong> for bulk delivery or lifting</p>
+        <a href="#contact" class="cta-button">Request Quote</a>
+      </div>
     </div>
 
-    <div class="product-card">
+    <div class="product-card-horizontal">
       <img src="https://raw.githubusercontent.com/SOARintermediary/soar-fuel-link/main/d6_logo_transparent.png" alt="D6 Logo">
-      <h2>⚙️ Gasoil D6</h2>
-      <ul>
-        <li><strong>Heavy fuel oil</strong> used for power generation and marine applications</li>
-        <li><strong>Delivery options</strong>: FOB, CIF, or TTO</li>
-        <li><strong>Global allocations</strong> through verified partners</li>
-        <li><strong>Documentation required</strong> prior to allocation</li>
-      </ul>
-      <a href="#contact" class="cta-button">Request Quote</a>
+      <div>
+        <h2>⚙️ Gasoil D6</h2>
+        <p><strong>Heavy fuel oil</strong> used for power generation and marine applications</p>
+        <p><strong>Delivery options</strong>: FOB, CIF, or TTO</p>
+        <p><strong>Global allocations</strong> through verified partners</p>
+        <p><strong>Documentation required</strong> prior to allocation</p>
+        <a href="#contact" class="cta-button">Request Quote</a>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .product-card-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
+  }
+
+  .product-card-horizontal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  .product-card-horizontal img {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .product-card-horizontal div {
+    flex: 1;
+    text-align: left;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f5b400;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  .cta-button:hover {
+    background-color: #dca900;
+  }
+</style>
 
 <style>
   .product-card {

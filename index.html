@@ -55,7 +55,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      margin: 40px 0 20px;
     }
 
     .logo-container img {
@@ -84,6 +84,7 @@
     ul {
       margin: 0;
       padding-left: 1.2rem;
+      text-align: left;
     }
 
     a {
@@ -131,6 +132,12 @@
       background-color: #dca900;
     }
 
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
     @media (max-width: 600px) {
       .navbar {
         flex-wrap: wrap;
@@ -155,10 +162,47 @@
       }
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #ccc;
+    .product-card-horizontal {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex-wrap: wrap;
+    }
+
+    .product-card-horizontal:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .product-card-horizontal img {
+      width: 100px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .product-card-horizontal div {
+      flex: 1;
+      text-align: left;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #f5b400;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .cta-button:hover {
+      background-color: #dca900;
     }
   </style>
 </head>
@@ -170,155 +214,10 @@
     <a href="#contact">CONTACT</a>
   </nav>
 
-  $1
-
-
-    $1
-
-
-
-
-
-    
-
-    <section id="products">
-  <div style="display: flex; flex-direction: column; gap: 40px;">
-    <div class="product-card-horizontal">
-      <img src="https://raw.githubusercontent.com/SOARintermediary/soar-fuel-link/main/diesel_logo_transparent.png" alt="Diesel Logo">
-      <div>
-        <h2>DIESEL (EN590 10PPM)</h2>
-        <p><strong>Quantity Range:</strong> 50,000 to 400,000 MT / Month × 12</p>
-        <p><strong>Full compliance</strong> with EU specifications</p>
-        <p><strong>Available delivery options</strong>: FOB/FOT upon request</p>
-        <p><strong>Allocations from certified refineries</strong></p>
-        <a href="#contact" class="cta-button">Request Quote</a>
-      </div>
+  <main class="overlay">
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/BnYnnD57/Made-with-ins-Mind-SOAR.png" alt="Soar Fuel Link Logo">
     </div>
-
-    <div class="product-card-horizontal">
-      <img src="https://raw.githubusercontent.com/SOARintermediary/soar-fuel-link/main/jet_logo_transparent.png" alt="Jet A1 Logo">
-      <div>
-        <h2>JET A1 AVIATION FUEL</h2>
-        <p><strong>Quantity Range:</strong> 1,000,000 to 5,000,000 Barrels / Month × 12</p>
-        <p><strong>Aviation-grade fuel</strong> for commercial operations</p>
-        <p><strong>Certified supply chains</strong> for secure delivery</p>
-        <p><strong>Available</strong> for bulk delivery or lifting</p>
-        <a href="#contact" class="cta-button">Request Quote</a>
-      </div>
-    </div>
-
-    <div class="product-card-horizontal">
-      <img src="https://raw.githubusercontent.com/SOARintermediary/soar-fuel-link/main/d6_logo_transparent.png" alt="D6 Logo">
-      <div>
-        <h2>GAS OIL D6 DIESEL</h2>
-        <p><strong>Quantity Range:</strong> 1,000,000 to 4,000,000 Gallons / Month × 12</p>
-        <p><strong>Heavy fuel oil</strong> used for power generation and marine applications</p>
-        <p><strong>Delivery options</strong>: FOB, CIF, or TTO</p>
-        <p><strong>Global allocations</strong> through verified partners</p>
-        <p><strong>Documentation required</strong> prior to allocation</p>
-        <a href="#contact" class="cta-button">Request Quote</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  .product-card-horizontal {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: rgba(255,255,255,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-wrap: wrap;
-  }
-
-  .product-card-horizontal:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  }
-
-  .product-card-horizontal img {
-    width: 100px;
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .product-card-horizontal div {
-    flex: 1;
-    text-align: left;
-  }
-
-  .cta-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #f5b400;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-
-  .cta-button:hover {
-    background-color: #dca900;
-  }
-</style>
-
-<style>
-  .product-card {
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: rgba(255,255,255,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  }
-
-  .product-card img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  .cta-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #f5b400;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-
-  .cta-button:hover {
-    background-color: #dca900;
-  }
-</style>
-
-    <a href="mailto:info@soarbusinessgroup.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; background-color:#f5b400; color:#000; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; margin-top:20px;">📩 Contact Us</a>
-
-    <section id="role">
-      <h2>Our Role</h2>
-      <p>We are not a reseller. We act as your trusted intermediary — facilitating direct, verified deals between buyers and licensed suppliers.</p>
-    </section>
-
-    <section id="why">
-      <h2>Why Work With Us</h2>
-      <ul>
-        <li>Transparent communication</li>
-        <li>Verified suppliers and buyers only</li>
-        <li>Rapid response and documentation handling</li>
-        <li>UAE-based network with global reach</li>
-      </ul>
-    </section>
 
     <section>
       <h1 style="font-weight: bold; text-transform: uppercase;">FUEL. TRUST. DELIVERED.</h1>
@@ -327,25 +226,8 @@
       <p>SOAR connects trusted fuel suppliers with verified buyers across the UAE and global markets. Specializing in EN590, D2, Jet A1, and D6 diesel, we provide fast-track access to secure fuel transactions, competitive pricing, and efficient logistics — with allocations ready for immediate lift.</p>
     </section>
 
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>We only work with serious and verified buyers with proper procedures (ICPO, BCL, etc.)</p>
-      <p>If you're ready to move forward, contact us to discuss current availability and documentation requirements.</p>
-      <p>📩 <a href="mailto:info@soarbusinessgroup.com" target="_blank" rel="noopener noreferrer">info@soarbusinessgroup.com</a></p>
+    <!-- Other sections like products, contact, etc., will follow below -->
 
-      <div class="contact-form">
-        <form action="https://formsubmit.co/info@soarbusinessgroup.com" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 SOAR. All rights reserved.</p>
-    </footer>
   </main>
 </body>
 </html>

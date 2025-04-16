@@ -13,12 +13,31 @@
       color: #fff;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
+      gap: 30px;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #f5b400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
     .overlay {
@@ -26,7 +45,7 @@
       padding: 40px 20px;
       border-radius: 8px;
       max-width: 900px;
-      width: 100%;
+      margin: auto;
     }
 
     .logo-container {
@@ -73,7 +92,16 @@
       text-decoration: underline;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     @media (max-width: 600px) {
+      .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
       h1 {
         font-size: clamp(1.5rem, 5vw, 2rem);
       }
@@ -100,6 +128,13 @@
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <a href="#products">Fuel</a>
+    <a href="#role">Our Role</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main class="overlay">
     <header class="logo-container">
       <img src="https://i.postimg.cc/BnYnnD57/Made-with-ins-Mind-SOAR.png" alt="Soar Fuel Link Logo">
@@ -110,7 +145,7 @@
       <p>We facilitate trusted transactions between verified fuel suppliers and qualified buyers across the UAE and international markets. Specializing in EN590, D2, Jet A1, and D6 diesel, we help ensure smooth logistics, competitive pricing, and secure deals. Available for immediate delivery in the UAE and worldwide.</p>
     </section>
 
-    <section>
+    <section id="products">
       <h2>🛢 Diesel (EN590 10ppm)</h2>
       <ul>
         <li><strong>Full compliance</strong> with EU specifications</li>
@@ -136,12 +171,12 @@
 
     <a href="mailto:info@soarbusinessgroup.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; background-color:#f5b400; color:#000; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; margin-top:20px;">📩 Contact Us</a>
 
-    <section>
+    <section id="role">
       <h2>Our Role</h2>
       <p>We are not a reseller. We act as your trusted intermediary — facilitating direct, verified deals between buyers and licensed suppliers.</p>
     </section>
 
-    <section>
+    <section id="why">
       <h2>Why Work With Us</h2>
       <ul>
         <li>Transparent communication</li>
@@ -151,7 +186,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Get in Touch</h2>
       <p>We only work with serious and verified buyers with proper procedures (ICPO, BCL, etc.)</p>
       <p>If you're ready to move forward, contact us to discuss current availability and documentation requirements.</p>
